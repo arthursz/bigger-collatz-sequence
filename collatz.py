@@ -26,7 +26,7 @@ class Collatz:
 
         return value
 
-    def find_integer_with_bigger_sequence(self):
+    def find_integer_with_bigger_collatz_sequence(self):
         max_value = 0
         max_length = 0
         self.memory = {}
@@ -47,7 +47,7 @@ class TestCollatz(unittest.TestCase):
 
     def test_algorithm_efficiency(self):
         start_time = time.time()
-        self.collatz.find_integer_with_bigger_sequence()
+        self.collatz.find_integer_with_bigger_collatz_sequence()
         end_time = time.time() - start_time
 
         print ("Time: {}".format(end_time))
@@ -55,7 +55,7 @@ class TestCollatz(unittest.TestCase):
         self.assertTrue(end_time < 5)
 
     def test_find_integer_with_bigger_sequence(self):
-        self.assertEqual(self.collatz.find_integer_with_bigger_sequence(), 837799)
+        self.assertEqual(self.collatz.find_integer_with_bigger_collatz_sequence(), 837799)
 
 if __name__ == '__main__':
     unittest.main()
