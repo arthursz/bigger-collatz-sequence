@@ -1,3 +1,5 @@
+#Collatz
+
 A seguinte sequência iterativa é definida pelo conjunto de inteiros positivos onde:
 
 n -> n/2 (se n é par) n -> 3n + 1 (se n é impar)
